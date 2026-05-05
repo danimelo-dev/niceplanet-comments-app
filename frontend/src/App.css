@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.header span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+.comment-form {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.comment-form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-color: #2563eb;
+}
+
+.comment-form button {
+  border: 0;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.comment-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.comments-section h2 {
+  margin-bottom: 16px;
+}
+
+.comments-list {
+  display: grid;
+  gap: 12px;
+}
+
+.comment-card {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #f9fafb;
+}
+
+.comment-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.comment-card p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.loading,
+.empty {
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+}
